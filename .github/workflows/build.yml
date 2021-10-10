@@ -6,8 +6,8 @@ jobs:
   build:
     strategy:
       matrix:
-        release: [wine32, wine64, wineWow]
-        package: [base, minimal, full]
+        release: [wine32, wine64]
+        package: [base, full]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.3.4

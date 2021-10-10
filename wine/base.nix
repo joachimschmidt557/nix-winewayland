@@ -85,8 +85,7 @@ stdenv.mkDerivation ((lib.optionalAttrs (buildScript != null) {
   ++ lib.optionals stdenv.isLinux  (with pkgs.xorg; [
      libXi libXcursor libXrandr libXrender libXxf86vm libXcomposite libXext
   ])
-  ++ [ pkgs.libxkbcommon ]));
-  # ++ [ pkgs.libxkbcommon pkgs.wayland pkgs.egl-wayland ]));
+  ++ [ pkgs.libxkbcommon pkgs.wayland pkgs.wayland-protocols pkgs.egl-wayland ]));
 
   patches = [ ] ++ patches';
 
