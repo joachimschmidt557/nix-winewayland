@@ -19,6 +19,6 @@ jobs:
           experimental-features = nix-command flakes
     - uses: cachix/cachix-action@v10
       with:
-        name: nimmm
+        name: winewayland
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix build '${{ matrix.release }}/${{ matrix.package }}'
+    - run: nix build '.#${{ matrix.release }}/${{ matrix.package }}'
