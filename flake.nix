@@ -1,4 +1,5 @@
 {
+  description = "Nix overlay for Wine with Wayland support";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
