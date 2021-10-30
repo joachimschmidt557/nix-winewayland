@@ -66,12 +66,12 @@ in rec {
 
   wayland = fetchFromGitLab rec {
     # https://gitlab.collabora.com/alf/wine/-/tree/wayland
-    version = "2021-10-14";
-    sha256 = "1hzdkvgvz8daq6y92xz0mfb782sqdl6lyn32byx7847z5h1y60gq";
+    version = "2021-10-20";
+    sha256 = "17bvb0lw2d3q0mf8azjx54q06p5f8a3z1r8rbs5qvj2d0lwglklq";
     domain = "gitlab.collabora.com";
     owner = "alf";
     repo = "wine";
-    rev = "c4ec870954f9248973fa2f20569884224c43ae48";
+    rev = "5affac5c26f8a138063a186ddfe070cf6641c68a";
 
     inherit (stable) gecko32 gecko64;
 
