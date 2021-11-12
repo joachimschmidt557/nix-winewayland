@@ -67,11 +67,11 @@ in rec {
   wayland = fetchFromGitLab rec {
     # https://gitlab.collabora.com/alf/wine/-/tree/wayland
     version = "2021-10-20";
-    sha256 = "02rqbyqvrlp0zs1l8jk3nmmgn7r47gd1vsw7y3k5hvg7r83dgc1p";
+    sha256 = "0qjsw28bf3gprwawqrqj0vpxjh66056sqdq94brbgbv009x5n386";
     domain = "gitlab.collabora.com";
     owner = "alf";
     repo = "wine";
-    rev = "18ec640165039c8e8668c60cb1708a46c5e36db4";
+    rev = "94bb45d9f0a433f647ef67bd0508bc0ea028951f";
 
     inherit (stable) gecko32 gecko64;
 
@@ -84,7 +84,7 @@ in rec {
 
     patches = [
       # Also look for root certificates at $NIX_SSL_CERT_FILE
-      ./cert-path.patch
+      ./cert-path-6.21.patch
      ];
   };
 
